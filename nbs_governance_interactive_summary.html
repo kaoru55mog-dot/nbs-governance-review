@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NbS Governance Conceptual Summary</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: #7f8c8d;
+            transition: 0.3s;
+        }
+        .tab:hover {
+            color: #2ecc71;
+        }
+        .tab.active {
+            color: #2ecc71;
+            border-bottom: 3px solid #2ecc71;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .mermaid {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .highlight {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-left: 5px solid #2ecc71;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>NbS Governance 概念・構造の統合サマリー</h1>
+    
+    <div class="tabs">
+        <button class="tab active" onclick="openTab(event, 'structure')">概念構造</button>
+        <button class="tab" onclick="openTab(event, 'evolution')">概念発展・出自</button>
+        <button class="tab" onclick="openTab(event, 'scale')">スケール問題</button>
+        <button class="tab" onclick="openTab(event, 'comparison')">論文比較表</button>
+    </div>
+
+    <!-- Tab 1: Conceptual Structure -->
+    <div id="structure" class="content active">
+        <h2>1. ガバナンスの概念構造</h2>
+        <p>NbSガバナンスは、単一のモデルではなく、複数の層（構造・プロセス・手法）が相互に連動するシステムとして理解されます。</p>
+        
+        <div class="mermaid">
+        graph TD
+            subgraph Core[中心概念]
+                G(Governance<br/>理念：ネットワーク化された意思決定)
+            end
+            
+            subgraph Design[制度設計]
+                PG(Polycentric Governance<br/>構造：多中心的な調整)
+                CG(Collaborative Governance<br/>プロセス：官民・市民連携)
+                AG(Adaptive Governance<br/>能力：不確実性への対応)
+            end
+            
+            subgraph Method[実践手法]
+                CC(Co-creation / Co-design<br/>手法：共同創造)
+                SL(Social Learning<br/>メカニズム：社会的学習)
+            end
+            
+            G --> Design
+            PG --> CG
+            CG --> CC
+            AG --> SL
+            SL --> AG
+            CC --> SL
+        </div>
+        
+        <div class="highlight">
+            <strong>核心的定義:</strong> NbS ガバナンスは、多中心的な構造の中で、協働的なプロセスを通じて共同創造し、その結果を社会的学習によって制度にフィードバックする適応的な仕組みです。
+        </div>
+    </div>
+
+    <!-- Tab 2: Conceptual Evolution -->
+    <div id="evolution" class="content">
+        <h2>2. 概念の発展と学術的出自</h2>
+        <p>NbSガバナンスは、生物多様性保全の「生態系アプローチ」を基盤に、政治学やレジリエンス研究の理論を吸収しながら発展してきました。</p>
+        
+        <div class="mermaid">
+        graph LR
+            A[生物多様性保全 / 環境科学] -->|Ecosystem Approach| B(NbS Umbrella)
+            C[政治学 / 公共行政学] -->|Polycentric / Collaborative| B
+            D[都市計画] -->|Mosaic / Co-creation| B
+            E[レジリエンス研究 / SES] -->|Adaptive / Social Learning| B
+            
+            B --> F{実装フェーズ}
+            F --> G[景観レベルの統合]
+            F --> H[実装ギャップの解消]
+            F --> I[不確実性の管理]
+        </div>
+
+        <h3>学術的出自の寄与</h3>
+        <ul>
+            <li><strong>環境科学:</strong> 「自然の統合的管理」という基本理念。</li>
+            <li><strong>政治学 (Ostrom等):</strong> 行政区分を超えた「多中心的な意思決定構造」の理論化。</li>
+            <li><strong>都市計画:</strong> 現場レベルでの「共同設計 (Co-design)」の実践的手法。</li>
+            <li><strong>レジリエンス研究:</strong> 不確実性に対応する「学習 (Social Learning)」と「適応」の視点。</li>
+        </ul>
+    </div>
+
+    <!-- Tab 3: Scale Problem -->
+    <div id="scale" class="content">
+        <h2>3. スケール問題と実装課題</h2>
+        <p>自然システム（流域・景観）と行政システム（行政区分）の不一致が、NbSの普及を妨げる最大の要因の一つです。</p>
+        
+        <div class="highlight">
+            <strong>Scalar Mismatch (スケールの不一致):</strong> 
+            自然は行政境界で止まりませんが、予算と権限は行政境界の内側にあります。
+        </div>
+
+        <h3>主な実装課題</h3>
+        <table>
+            <tr>
+                <th>課題カテゴリー</th>
+                <th>内容</th>
+                <th>ガバナンスによる解決</th>
+            </tr>
+            <tr>
+                <td>空間的ミスマッチ</td>
+                <td>上流での対策（負担）と下流での便益の不均衡。</td>
+                <td>流域ガバナンス、多中心的な調整。</td>
+            </tr>
+            <tr>
+                <td>行政の縦割り (Silos)</td>
+                <td>部門間の予算・目標の分断。</td>
+                <td>部門横断的協力、多機能性評価。</td>
+            </tr>
+            <tr>
+                <td>時間的ミスマッチ</td>
+                <td>自然の回復（長期）と選挙周期（短期）の乖離。</td>
+                <td>長期的維持管理の制度化、社会的学習。</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Tab 4: Comparison Table -->
+    <div id="comparison" class="content">
+        <h2>4. 主要論文の比較整理</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>論文</th>
+                    <th>ステークホルダー参加</th>
+                    <th>政策統合の視点</th>
+                    <th>ガバナンス構造</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Martin (2025)</td>
+                    <td>真の共同設計を重視</td>
+                    <td>実装ギャップの解消</td>
+                    <td>多中心型ガバナンス</td>
+                </tr>
+                <tr>
+                    <td>Zingraff-Hamed (2021)</td>
+                    <td>Living Labを活用</td>
+                    <td>場所に基づいた計画戦略</td>
+                    <td>多規模・多領域協力</td>
+                </tr>
+                <tr>
+                    <td>Ferreira (2020)</td>
+                    <td>ボトムアップ主導</td>
+                    <td>都市計画への埋め込み</td>
+                    <td>モザイク・ガバナンス</td>
+                </tr>
+                <tr>
+                    <td>Nelson (2020)</td>
+                    <td>堅牢な参加が必要</td>
+                    <td>景観スケールの統合</td>
+                    <td>適応型・社会的学習</td>
+                </tr>
+                <tr>
+                    <td>Cohen-Shacham (2019)</td>
+                    <td>幅広い参加と伝統知</td>
+                    <td>全体設計の不可欠な一部</td>
+                    <td>IUCN標準原則</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, content, tablinks;
+        content = document.getElementsByClassName("content");
+        for (i = 0; i < content.length; i++) {
+            content[i].className = content[i].className.replace(" active", "");
+        }
+        tablinks = document.getElementsByClassName("tab");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).className += " active";
+        evt.currentTarget.className += " active";
+        
+        // Re-render mermaid diagrams when tab is switched
+        mermaid.init();
+    }
+</script>
+
+</body>
+</html>
