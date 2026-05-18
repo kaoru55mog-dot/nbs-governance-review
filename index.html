@@ -1,130 +1,43 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NbS Governance Research Portal</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f8f9fa;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        h1 {
-            color: #2c3e50;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            color: #7f8c8d;
-            font-size: 1.2em;
-        }
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background-color: #fff;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: transform 0.2s, box-shadow 0.2s;
-            text-decoration: none;
-            color: inherit;
-            border-top: 5px solid #2ecc71;
-            display: flex;
-            flex-direction: column;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-        .card h2 {
-            margin-top: 10px;
-            color: #2c3e50;
-            font-size: 1.4em;
-        }
-        .card p {
-            flex-grow: 1;
-            color: #555;
-            font-size: 0.95em;
-        }
-        .tag {
-            display: inline-block;
-            background-color: #e8f8f5;
-            color: #1abc9c;
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.75em;
-            font-weight: bold;
-            align-self: flex-start;
-        }
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding: 20px;
-            border-top: 1px solid #ddd;
-            color: #95a5a6;
-            font-size: 0.9em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>NbS Governance Knowledge Base</title>
 </head>
 <body>
+  <h1>NbS Governance Knowledge Base</h1>
 
-<header>
-    <h1>NbS Governance Research Portal</h1>
-    <p class="subtitle">自然に基盤を置いた解決策（NbS）のガバナンスに関する調査レポート集</p>
-</header>
+  <h2>Summaries</h2>
+  <ul>
+    <li><a href="summaries/nbs_governance_comparison.html">NbS Governance Comparison</a></li>
+    <li><a href="summaries/nbs_governance_conceptual_structure.html">Conceptual Structure</a></li>
+    <li><a href="summaries/nbs_governance_conceptual_evolution.html">Conceptual Evolution</a></li>
+    <li><a href="summaries/nbs_governance_scale_problem.html">Scale Problem</a></li>
+  </ul>
 
-<div class="card-container">
-    <!-- Interactive Summary -->
-    <a href="nbs_governance_interactive_summary.html" class="card" style="border-top-color: #e67e22;">
-        <span class="tag">Interactive</span>
-        <h2>統合サマリー・ダッシュボード</h2>
-        <p>概念構造、発展、スケール問題、論文比較を1つに集約。Mermaid図を含む対話型レポート。</p>
-    </a>
+  <h2>Literature Notes</h2>
+  <ul>
+    <li><a href="notes/Calliari2022.html">Calliari et al. (2022)</a></li>
+    <li><a href="notes/Cohen-Shacham2019.html">Cohen-Shacham et al. (2019)</a></li>
+    <li><a href="notes/Ferreira2020.html">Ferreira et al. (2020)</a></li>
+    <li><a href="notes/Johnson2022.html">Johnson et al. (2022)</a></li>
+    <li><a href="notes/Keesstra2018.html">Keesstra et al. (2018)</a></li>
+    <li><a href="notes/Kumar2021.html">Kumar et al. (2021)</a></li>
+    <li><a href="notes/Martin2025.html">Martin et al. (2025)</a></li>
+    <li><a href="notes/Nelson2020.html">Nelson et al. (2020)</a></li>
+    <li><a href="notes/Sarabi2019.html">Sarabi et al. (2019)</a></li>
+    <li><a href="notes/Seddon2020.html">Seddon et al. (2020)</a></li>
+    <li><a href="notes/Zingraff-Hamed2021.html">Zingraff-Hamed et al. (2021)</a></li>
+  </ul>
 
-    <!-- Conceptual Structure -->
-    <a href="nbs_governance_conceptual_structure.html" class="card">
-        <span class="tag">Detail</span>
-        <h2>概念構造の整理</h2>
-        <p>協働型・適応型・多中心型ガバナンスの詳細な関係性と階層構造の分析。</p>
-    </a>
-
-    <!-- Conceptual Evolution -->
-    <a href="nbs_governance_conceptual_evolution.html" class="card">
-        <span class="tag">History</span>
-        <h2>概念発展の流れと出自</h2>
-        <p>生態系アプローチからの変遷と、政治学・レジリエンス研究等の寄与のまとめ。</p>
-    </a>
-
-    <!-- Scale Problem -->
-    <a href="nbs_governance_scale_problem.html" class="card" style="border-top-color: #3498db;">
-        <span class="tag">Problem</span>
-        <h2>スケール問題と実装課題</h2>
-        <p>自然の境界と行政境界のミスマッチ（Scalar Mismatch）に関する詳細分析。</p>
-    </a>
-
-    <!-- Comparison Table -->
-    <a href="nbs_governance_comparison.html" class="card" style="border-top-color: #9b59b6;">
-        <span class="tag">Literature</span>
-        <h2>主要論文の比較一覧</h2>
-        <p>Martin (2025) や Zingraff-Hamed (2021) などの主要文献の比較データ。</p>
-    </a>
-</div>
-
-<footer>
-    <p>&copy; 2026 NbS Governance Research Project | Generated by Gemini CLI</p>
-</footer>
-
+  <h2>Concept Notes</h2>
+  <ul>
+    <li><a href="concepts/Cohen-Shacham et al. 2019.html">Cohen-Shacham et al. 2019</a></li>
+    <li><a href="concepts/Ecosystem-based Adaptation.html">Ecosystem-based Adaptation</a></li>
+    <li><a href="concepts/Polycentric governance.html">Polycentric governance</a></li>
+    <li><a href="concepts/Seddon et al. 2020.html">Seddon et al. 2020</a></li>
+    <li><a href="concepts/Strategic planning framework.html">Strategic planning framework</a></li>
+    <li><a href="concepts/Technological bias.html">Technological bias</a></li>
+  </ul>
 </body>
 </html>
